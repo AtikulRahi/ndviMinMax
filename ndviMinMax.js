@@ -17,7 +17,7 @@ var ndviCollection = s2.map(calNDVI)
 print(ndviCollection)
 /*var ndvi = s2.normalizedDifference(["SR_B5","SR_B4"]).rename("NDVI")
 print("NDVI", ndvi)*/
-var ndvi2 = ndviCollection.first()
+var ndvi2 = ndviCollection.median()
 var vizParam = {
   min: -1,
   max: 1,
